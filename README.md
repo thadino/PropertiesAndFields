@@ -92,6 +92,8 @@ Log.d("her er a -- ", a); // a bliver 20 med dig.
 ## Backing Properties
 
 ```
+Som eksemplet viser nedenfor kan man ved hjælp af backing properties få adgang til en anden property
+i instantieringen af en property.
 ```
 
 ### Class (Class)
@@ -123,4 +125,28 @@ var cph: String = ""
         lars = "linuxmanden";
         toast(cph); // returnere kasper
     }
+```
+
+
+## lateinit
+
+```
+Properties som ikke må være null  er nødt til at blive deklareret i constructoren. Dog er dette ikke altid muligt. F. eks ved opsætningen af en unit test. Her kan man ikke putte en not-null property ind i constructor. For at håndtere dette kan man bruge lateinit.
+
+
+```
+
+### Eksempel:
+```kotlin
+public class MyTest {
+    lateinit var subject: TestSubject
+
+    @SetUp fun setup() {
+        subject = TestSubject()
+    }
+
+    @Test fun test() {
+        subject.method()  // dereference directly
+    }
+}
 ```
