@@ -127,8 +127,7 @@ var cph: String = ""
     }
 ```
 
-
-## lateinit
+## Late-Initialized Properties
 
 ```
 Properties som ikke må være null  er nødt til at blive deklareret i constructoren. 
@@ -139,7 +138,7 @@ For at håndtere dette kan man bruge lateinit.
 
 ```
 
-### Eksempel:
+### Eksempel på lateinit:
 ```kotlin
 public class MyTest {
     lateinit var subject: TestSubject
