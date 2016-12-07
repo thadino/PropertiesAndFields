@@ -87,3 +87,35 @@ NewInstanceOfClass1.aaa = "20";
 var a = NewInstanceOfIClass1.aaa;
 Log.d("her er a -- ", a); // a bliver 20 med dig.
 ``` 
+
+
+### Backing Properties
+```kotlin
+fun Context.toast(message: String)
+{
+  Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+}
+
+var lars: String = "hej "
+
+var cph: String = ""
+    get() {
+        if (lars == "lars"){
+            return lars.toUpperCase()
+        }
+        if (lars == "linuxmanden"){
+            lars = "kasper"
+            return lars
+        }
+        return lars
+    }
+    
+   class Class : AppCompatActivity()  {
+        lars = "koen";
+        toast(cph); // returnere koen
+        lars = "lars";
+        toast(cph); // returnere LARS (lars i uppercase)
+        lars = "linuxmanden";
+        toast(cph); // returnere kasper
+    }
+```
