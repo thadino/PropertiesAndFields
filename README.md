@@ -5,7 +5,7 @@
 
 ### Class 1
 
-´´´kotlin
+```kotlin
 
         var NewInstanceOfIncomingSms = IncomingSms();
         NewInstanceOfIncomingSms.aaa = "20";
@@ -16,7 +16,7 @@
 
 ### Class 2
 
-´´´kotlin
+```kotlin
     val isEmpty: Boolean = true;
     var aaa: String = "defaultValue"
 ```
