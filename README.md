@@ -96,7 +96,7 @@ Som eksemplet viser nedenfor kan man ved hjælp af backing properties få adgang
 i instantieringen af en property.
 ```
 
-### Class (Class)
+### Eksempel på Backing Properties
 ```kotlin
 fun Context.toast(message: String)
 {
@@ -126,6 +126,35 @@ var cph: String = ""
         toast(cph); // returnere kasper
     }
 ```
+
+
+## Compile-Time Constants
+```
+Properties hvilke værdier ikke er kendt når compileren kører kan blive markeret som 
+compile time constants ved at bruge const.
+
+For at bruge const er der visse regler der skal følges:
+Den skal være Top-level eller medlem af et objekt.
+Den skal være Initialiseret med value af typen string eller en primitiv type.
+Du må ikke lave custom getter.
+
+
+I kotlin er constants globale og kan kaldes i alle dine klasser og værdien kan ikke ændres.
+
+```
+
+### Eksempel på Constrants
+
+```kotlin
+Class1
+const val myconst: String = "dubi "
+```
+
+```kotlin
+Class2
+Log.d("", myconst); // returnere dubi
+```
+
 
 ## Late-Initialized Properties
 
