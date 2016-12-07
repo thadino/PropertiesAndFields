@@ -140,6 +140,8 @@ Du må ikke lave custom getter.
 
 
 I kotlin er constants globale og kan kaldes i alle dine klasser og værdien kan ikke ændres.
+Dette kan lade sig gøre da variablen er skrevet i compile time 
+(Dvs at const variablen er smidt ind i B i compile time og ikke run time)
 
 ```
 
