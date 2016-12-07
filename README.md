@@ -37,7 +37,7 @@ Then you get access to all public functions by using
 class.myfoo();
 ```
 
-## Example of Useage
+## Example of Usage
 
 ### Class1 (Class)
 
@@ -58,3 +58,28 @@ var a = NewInstanceOfIClass1.aaa;
 Log.d("her er a -- ", a); // a bliver 20.
 ``` 
 
+
+## Example of Usage with custom accessors
+
+```kotlin
+
+```
+
+### Class1 (Class)
+
+
+```kotlin
+    var aaa = "hej"
+        get() = field + " med dig"
+```
+
+
+
+### Class2 (Class)
+
+```kotlin
+var NewInstanceOfClass1 = Class1();
+NewInstanceOfClass1.aaa = "20";
+var a = NewInstanceOfIClass1.aaa;
+Log.d("her er a -- ", a); // a bliver 20 med dig.
+``` 
