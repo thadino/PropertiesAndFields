@@ -89,7 +89,10 @@ Log.d("her er a -- ", a); // a bliver 20 med dig.
 ``` 
 
 
-### Backing Properties
+## Backing Properties
+
+
+### Class (Class)
 ```kotlin
 fun Context.toast(message: String)
 {
