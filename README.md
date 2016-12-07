@@ -131,7 +131,9 @@ var cph: String = ""
 ## lateinit
 
 ```
-Properties som ikke må være null  er nødt til at blive deklareret i constructoren. Dog er dette ikke altid muligt. F. eks ved opsætningen af en unit test. Her kan man ikke putte en not-null property ind i constructor. For at håndtere dette kan man bruge lateinit.
+Properties som ikke må være null  er nødt til at blive deklareret i constructoren. Dog er dette ikke altid muligt. 
+F. eks ved opsætningen af en unit test. Her kan man ikke putte en not-null property ind i constructor.
+For at håndtere dette kan man bruge lateinit.
 
 
 ```
