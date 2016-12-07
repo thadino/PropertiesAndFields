@@ -37,6 +37,8 @@ Then you get access to all public functions by using
 class.myfoo();
 ```
 
+## Example of Useage
+
 ### Class1 (Class)
 
 
