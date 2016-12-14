@@ -43,8 +43,10 @@ class.myfoo();
 
 
 ```kotlin
-val isEmpty: Boolean = true;
-var aaa: String = "defaultValue"
+class Class1{
+    val isEmpty: Boolean = true;
+    var aaa: String = "defaultValue"
+}
 ```
 
 
@@ -52,10 +54,12 @@ var aaa: String = "defaultValue"
 ### Class2 (Class)
 
 ```kotlin
-var NewInstanceOfClass1 = Class1();
-NewInstanceOfClass1.aaa = "20";
-var a = NewInstanceOfIClass1.aaa;
-Log.d("her er a -- ", a); // a bliver 20.
+class Class2{
+    var NewInstanceOfClass1 = Class1();
+    NewInstanceOfClass1.aaa = "20";
+    var a = NewInstanceOfIClass1.aaa;
+    Log.d("her er a -- ", a); // a bliver 20.
+}
 ``` 
 
 
