@@ -4,9 +4,9 @@
 ### Val vs Var
 
 ```
-Val er private final og kommer med en default getter metode.
+Val kommer med en default getter metode.
 
-Var er private og kommer med en default getter og setter metode.
+Var kommer med en default getter og setter metode.
 
 Fuld syntax for deklarering af var eller val:
 var <propertyName>: <PropertyType> [= <property_initializer>] 
@@ -15,27 +15,24 @@ hvor type ikke er nødvendig hvis man kan udlede det fra instantieringen
 
 ### Calling Methods in Other Classes
 
-```
-Classes i kotlin kan kaldes ved at skrive classname();
-Det som classname(); gør er at den instantierer en ny instans af classen.
+
+Classes i kotlin kan kaldes ved at skrive `Classname()`
+Det som `Classname()` gør er at den instantierer en ny instans af klassen.
 
 
-```
-```java
+
+
 F. eks i java
-Class1 class = new Class1();
-```
+`Class1 class = new Class1()`
 
 
-```kotlin
 I Kotlin
-var class = class1();
-```
+`var class = class1()`
 
-```
+
+
 Then you get access to all public functions by using
-class.myfoo();
-```
+`class.myfoo()`
 
 ## Example of Usage
 
@@ -168,14 +165,12 @@ Log.d("", myconst); // returnere dubi
 
 ## Late-Initialized Properties
 
-```
+
 Properties som ikke må være null  er nødt til at blive deklareret i constructoren. 
 Dog er dette ikke altid muligt. F. eks ved opsætningen af en unit test. 
 Her kan man ikke putte en not-null property ind i constructor.
 For at håndtere dette kan man bruge lateinit.
 
-
-```
 
 ### Eksempel på lateinit:
 ```kotlin
