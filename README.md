@@ -137,13 +137,13 @@ var cph: String = ""
 
 
 ## Compile-Time Constants
-```
-Properties hvilke værdier ikke er kendt når compileren kører kan blive markeret som 
-compile time constants ved at bruge const.
+
+Properties hvilke værdier er kendt når compileren kører kan blive markeret som 
+compile time constants ved at bruge `const`.
 
 For at bruge const er der visse regler der skal følges:
 Den skal være Top-level eller medlem af et objekt.
-Den skal være Initialiseret med value af typen string eller en primitiv type.
+Den skal være Initialiseret med value af typen `String` eller en primitiv type.
 Du må ikke lave custom getter.
 
 
@@ -151,7 +151,7 @@ I kotlin er constants globale og kan kaldes i alle dine klasser og værdien kan 
 Dette kan lade sig gøre da variablen er skrevet i compile time 
 (Dvs at const variablen er smidt ind i B i compile time og ikke run time)
 
-```
+
 
 ### Eksempel på Constrants
 
