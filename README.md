@@ -65,13 +65,13 @@ class Class2{
 
 ## Example of Usage with custom accessors
 
-```
+
 Vi kan skrive custom accessors ligesom normale funktioner inde i property deklarationen.
 
 Klasser i kotlin kan ikke have felter. Dog nogle gange kan det være 
 en nødvendighed at have et backing field når man bruger custom accessors. 
-For disse formål, tilbyder kotlin en automatisk backing field som kan tilgås via field indentifier.
-```
+For disse formål, tilbyder kotlin en automatisk backing field som kan tilgås via `field` indentifier.
+
 
 ### Class1 (Class)
 
