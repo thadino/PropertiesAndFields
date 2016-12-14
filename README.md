@@ -75,15 +75,16 @@ For disse formål, tilbyder kotlin en automatisk backing field som kan tilgås v
 
 ### Class1 (Class)
 
-
 ```kotlin
+class Class1{
     var aaa = "hej"
         get() = field + " med dig"
+}
 ```
 
 
 
-### Class2 (Class)
+### Useage
 
 ```kotlin
 var NewInstanceOfClass1 = Class1();
@@ -95,19 +96,16 @@ Log.d("her er a -- ", a); // a bliver 20 med dig.
 
 ## Backing Properties
 
-```
+
 Som eksemplet viser nedenfor kan man ved hjælp af backing properties få adgang til en anden property
 i instantieringen af en property.
-```
+
 
 ### Eksempel på Backing Properties
 ```kotlin
-fun Context.toast(message: String)
-{
-  Toast.makeText(this, message, Toast.LENGTH_LONG).show()
-}
+class Class3{
 
-var lars: String = "hej "
+private var lars: String = "hej "
 
 var cph: String = ""
     get() {
@@ -120,15 +118,21 @@ var cph: String = ""
         }
         return lars
     }
-    
-   class Class : AppCompatActivity()  {
-        lars = "koen";
-        toast(cph); // returnere koen
-        lars = "lars";
-        toast(cph); // returnere LARS (lars i uppercase)
-        lars = "linuxmanden";
-        toast(cph); // returnere kasper
+    set(value){
+    lars = value;
     }
+}
+
+   fun main()  {
+   val c3 = Class3()
+        c3.cph = "koen";
+        println(cph); // returnerer koen
+        c3.cph = "lars";
+        println(cph); // returnerer LARS (lars i uppercase)
+        c3.cph = "linuxmanden";
+        println(cph); // returnerer kasper
+    }
+
 ```
 
 
